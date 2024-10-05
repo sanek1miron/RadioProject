@@ -1,9 +1,27 @@
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing:border-box;
 	font-family: "Roboto", sans-serif;
 }
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+	margin: 0;
+  }
+  
+  ol[role="list"], ul[role="list"] {
+	list-style: none;
+	padding-inline: 0;
+  }
+  
+  h1, h2, h3, h4, h5 {
+	font-size: inherit;
+	font-weight: inherit;
+  }
+  
+  img {
+	display: block;
+	max-inline-size: 100%;
+  }
 
 .title {
 	background: url('../img/main_bg.jpg') center center / cover no-repeat;
@@ -191,6 +209,9 @@
 }
 
 .online__img {
+	width: 615px;
+	height: 350px;
+	object-fit: contain;
 	position: absolute;
 	z-index: 1;
 	top: 93px;
@@ -220,10 +241,6 @@
 	width: 224px;
 }
 
-.circle__sum {
-	display: flex;	
-}
-
 .circle {
 	display: flex;
 	justify-content: center;
@@ -236,8 +253,7 @@
 }
 
 .training__img {
-	display: block;
-	margin: 0 auto;
+	max-width: 60px;
 }
 
 .training__descr {
@@ -279,6 +295,9 @@
 .webinar__img {
 	display: block;
 	margin: 0 auto;
+	width: 500px;
+	height: 250px;
+	object-fit: cover;
 }
 
 .webinar__text {
